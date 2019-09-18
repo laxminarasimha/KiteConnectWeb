@@ -32,6 +32,7 @@ namespace KiteConnectWeb
           
             builder.RegisterType<ConfigSettings>().As<IConfigSettings>().SingleInstance();
             builder.RegisterType<ConnectHelper>().As<IConnectHelper>().SingleInstance();
+            builder.RegisterType<ConnectLogger>().As<IConnectLogger>().SingleInstance();
 
             Container = builder.Build();
 

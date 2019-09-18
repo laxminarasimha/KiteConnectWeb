@@ -1,0 +1,55 @@
+﻿@model KiteConnectWeb.Models.ConnectModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_ConnectLayout.cshtml";
+ }
+
+<div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-3">
+                    @Html.ActionLink("Login", "Login", "Connect", new { @Class = "btn btn-primary KiteButton" })
+                </div>
+                <div class="col-md-3">
+                    @Html.ActionLink("Positions", "Positions", "Connect", new { @Class = "btn btn-primary KiteButton" })
+                </div>
+                <div class="col-md-3">
+                    @Html.ActionLink("Holdings", "Holdings", "Connect", new { @Class = "btn btn-primary KiteButton" })
+                </div>
+                <div class="col-md-3">
+                    @Html.ActionLink("Instruments", "Instruments", "Connect", new { @Class = "btn btn-primary KiteButton" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    @Html.ActionLink("Quotes", "Quotes", "Connect", new { @Class = "btn btn-primary KiteButton" })
+                </div>
+                <div class="col-md-3">
+                    @Html.ActionLink("OHLC", "OHLC", "Connect", new { @Class = "btn btn-primary KiteButton" })
+                </div>
+                <div class="col-md-3">
+                    @Html.ActionLink("LTP", "LTP", "Connect", new { @Class = "btn btn-primary KiteButton" })
+                </div>
+                <div class="col-md-3">
+                    @Html.ActionLink("TriggerRange", "TriggerRange", "Connect", new { @Class = "btn btn-primary KiteButton" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    @Html.ActionLink("All Orders", "Orders", "Connect", new { @Class = "btn btn-primary KiteButton" })
+                </div>
+                <div class="col-md-3">
+                    @Html.ActionLink("Clear Messages", "ClearMessages", "Connect", new { @Class = "btn btn-primary KiteButton" })
+                </div>
+                <div class="col-md-3">
+                    
+                </div>
+                <div class="col-md-3">
+                    
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

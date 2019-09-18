@@ -144,7 +144,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="AutofacConfig.cs" />
     <Compile Include="ConfigSettings.cs" />
+    <Compile Include="ConnectConstants.cs" />
     <Compile Include="ConnectHelper.cs" />
+    <Compile Include="ConnectLogger.cs" />
     <Compile Include="Controllers\ConnectController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -152,6 +154,8 @@
     </Compile>
     <Compile Include="Interfaces\IConfigSettings.cs" />
     <Compile Include="Interfaces\IConnectHelper.cs" />
+    <Compile Include="Interfaces\IConnectLogger.cs" />
+    <Compile Include="Models\ConnectModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -190,10 +194,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Connect\Index.cshtml" />
+    <Content Include="Views\Connect\Positions.cshtml" />
+    <Content Include="Views\Shared\_ConnectLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
